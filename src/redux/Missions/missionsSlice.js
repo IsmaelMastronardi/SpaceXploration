@@ -15,7 +15,7 @@ export const fetchMissions = createAsyncThunk('missions/fetchMissinons',
   });
 
 const initialState = {
-  arr: [],
+  missionsArr: [],
   status: 'loading',
 };
 
@@ -28,7 +28,7 @@ const missionSlice = createSlice({
     });
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
       state.status = 'fullfilled';
-      state.arr = action.payload;
+      state.missionsArr = action.payload;
       console.log(action.payload);
     });
   },

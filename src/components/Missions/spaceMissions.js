@@ -4,18 +4,22 @@ import SingleMission from './singleMissions';
 import { fetchMissions } from '../../redux/Missions/missionsSlice';
 
 const MissionList = () => {
-  const { arr, status } = useSelector((store) => store.missions);
+  const { missionsArr, status } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (status === 'loading') {
+      console.log(missionsArr);
+      dispatch(fetchMissions());
+    }
+  });
+
   if (status === 'loading') {
     return (<p>Loading</p>);
   }
   if (status === 'fullfilled') {
     return (
       <>
-        {arr.map((el) => (
+        {missionsArr.map((el) => (
           <SingleMission
             key={el.mission_id}
             name={el.mission_name}
