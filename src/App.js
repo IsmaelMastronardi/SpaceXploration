@@ -1,24 +1,26 @@
+import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Rockets from './components/Rockets/rockets';
+import Missions from './components/Missions/missions';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Rockets</Link>
+          </li>
+          <li>
+            <Link to="/Missions">Missions</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/Missions" element={<Missions />} />
+      </Routes>
+    </>
   );
 }
 
