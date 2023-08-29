@@ -7,7 +7,6 @@ import '../../styles/missions.css';
 
 const MissionList = () => {
   const { missionsArr, status } = useSelector((store) => store.missions);
-  console.log(missionsArr);
   const dispatch = useDispatch();
   useEffect(() => {
     if (status === 'loading') {

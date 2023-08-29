@@ -22,6 +22,17 @@ const initialState = {
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
+  reducers: {
+    memberStatus: (state, action) => {
+      const id = action.payload;
+      const mission = state.missionsArr.find((obj) => obj.mission_id === id);
+      if (!mission.reserved) {
+        mission.reserved = true;
+      } else {
+        mission.reserved = false;
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchMissions.pending, (state) => {
       state.status = 'loading';
@@ -29,9 +40,9 @@ const missionSlice = createSlice({
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
       state.status = 'fullfilled';
       state.missionsArr = action.payload;
-      console.log(action.payload);
     });
   },
 });
 
+export const { memberStatus } = missionSlice.actions;
 export default missionSlice.reducer;

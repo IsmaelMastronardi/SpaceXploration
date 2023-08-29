@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { memberStatus } from '../../redux/Missions/missionsSlice';
 
 const SingleMission = ({ obj }) => {
+  const dispatch = useDispatch();
   let membership = '';
   if (obj.reserved === undefined || obj.reserved === false) {
     membership = <span className="notMemberSpan">NOT A MEMBER</span>;
@@ -14,7 +17,7 @@ const SingleMission = ({ obj }) => {
       <td>{obj.description}</td>
       <td>{membership}</td>
       <td>
-        <Button variant="outline-secondary">Join Mission</Button>
+        <Button variant="outline-secondary" onClick={() => dispatch(memberStatus(obj.mission_id))}>Join Mission</Button>
       </td>
     </tr>
   );
