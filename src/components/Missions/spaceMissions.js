@@ -19,7 +19,7 @@ const MissionList = () => {
   }
   if (status === 'fullfilled') {
     return (
-      <Table striped bordered variant="dark">
+      <Table striped bordered hover>
         <thead>
           <tr>
             <th>Mission</th>
