@@ -1,5 +1,7 @@
+import MissionList from './spaceMissions';
+
 const Missions = () => (
-  <p>I have a mission</p>
+  <MissionList />
 );
 
 export default Missions;
