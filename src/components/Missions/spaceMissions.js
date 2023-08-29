@@ -7,6 +7,7 @@ import '../../styles/missions.css';
 
 const MissionList = () => {
   const { missionsArr, status } = useSelector((store) => store.missions);
+  console.log(missionsArr);
   const dispatch = useDispatch();
   useEffect(() => {
     if (status === 'loading') {
@@ -25,16 +26,14 @@ const MissionList = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th>join</th>
+            <th>Join</th>
           </tr>
         </thead>
         <tbody>
           {missionsArr.map((el) => (
             <SingleMission
               key={el.mission_id}
-              name={el.mission_name}
-              id={el.mission_id}
-              description={el.description}
+              obj={el}
             />
           ))}
         </tbody>
