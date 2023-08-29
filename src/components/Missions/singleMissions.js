@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 const SingleMission = ({ name, id, description }) => (
-  <>
-    <p>{name}</p>
-    <p>{id}</p>
-    <p>{description}</p>
-  </>
+  <tr>
+    <td>{name}</td>
+    <td>{id}</td>
+    <td>{description}</td>
+  </tr>
 );
 
 SingleMission.propTypes = {
