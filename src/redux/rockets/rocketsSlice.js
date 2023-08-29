@@ -11,16 +11,10 @@ const rocketsSlice = createSlice({
   name: 'rockets',
   initialState: [],
   reducers: {
-    bookRocket: (state, action) => {
+    toggleReservation: (state, action) => {
       const rocket = state.find((rocket) => rocket.id === action.payload);
       if (rocket) {
-        rocket.reserved = true;
-      }
-    },
-    cancelRocketBooking: (state, action) => {
-      const rocket = state.find((rocket) => rocket.id === action.payload);
-      if (rocket) {
-        rocket.reserved = false;
+        rocket.reserved = !rocket.reserved;
       }
     },
   },
@@ -29,5 +23,5 @@ const rocketsSlice = createSlice({
   },
 });
 
-export const { bookRocket, cancelRocketBooking } = rocketsSlice.actions;
+export const { toggleReservation } = rocketsSlice.actions;
 export default rocketsSlice.reducer;
