@@ -19,7 +19,6 @@ const Rockets = () => {
         <div key={rocket.id}>
           <h2>{rocket.name}</h2>
           {rocket.reserved && <span className="badge-reserved">Reserved</span>}
-          {!rocket.reserved && <span className="badge-available">Available</span>}
           <p>{rocket.description}</p>
           <img src={rocket.flickr_images[0]} alt={rocket.name} />
           <button type="button" onClick={() => dispatch(toggleReservation(rocket.id))}>
