@@ -27,7 +27,7 @@ const MyProfile = () => {
           <ul>
             {filterMission.map((mission) => (
               <li key={mission.mission_id} className="myProfileListItem">
-                <h3 className="myProfileMissionTitle">{mission.mission_name}</h3>
+                <h3 className="myProfileMissionTitle"><a href={mission.wikipedia} target="_blank" rel="noreferrer">{mission.mission_name}</a></h3>
                 <Button
                   variant="outline-danger"
                   onClick={() => dispatch(memberStatus(mission.mission_id))}
