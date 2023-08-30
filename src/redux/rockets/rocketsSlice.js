@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
   const response = await axios.get('https://api.spacexdata.com/v4/rockets');
-  return response.data.map((rocket) => ({ ...rocket, reserved: false })); // Add reserved field
+  return response.data.map((rocket) => ({ ...rocket, reserved: false }));
 });
 
 const rocketsSlice = createSlice({

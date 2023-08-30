@@ -27,4 +27,9 @@
 
 .btn-max-heigth {
   max-height: 40px;
+
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
