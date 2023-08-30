@@ -29,6 +29,7 @@ const SingleMission = ({ obj }) => {
         <Button
           variant={buttonVariant}
           onClick={() => dispatch(memberStatus(obj.mission_id))}
+          className="bt-max-heigth"
         >
           {joinButton}
         </Button>

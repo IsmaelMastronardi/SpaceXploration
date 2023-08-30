@@ -14,3 +14,17 @@
 .noMissions {
   font-size: 1.5rem;
 }
+
+.myProfileListItem {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.myProfileMissionTitle {
+  width: 18rem;
+}
+
+.btn-max-heigth {
+  max-height: 40px;
+}

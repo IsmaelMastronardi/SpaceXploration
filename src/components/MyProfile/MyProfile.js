@@ -1,11 +1,14 @@
 // MyProfile.js
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { Button } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import { memberStatus } from '../../redux/Missions/missionsSlice';
 
 const MyProfile = () => {
   const reservedRockets = useSelector((state) => state.rockets.filter((rocket) => rocket.reserved));
   const { missionsArr } = useSelector((store) => store.missions);
   const filterMission = missionsArr.filter((el) => el.reserved);
+  const dispatch = useDispatch();
   return (
     <div>
       <h1>My Profile</h1>
@@ -23,8 +26,15 @@ const MyProfile = () => {
         { filterMission.length === 0 ? (<p className="noMissions">No Misions Joined</p>) : (
           <ul>
             {filterMission.map((mission) => (
-              <li key={mission.mission_id}>
-                <h3>{mission.mission_name}</h3>
+              <li key={mission.mission_id} className="myProfileListItem">
+                <h3 className="myProfileMissionTitle">{mission.mission_name}</h3>
+                <Button
+                  variant="outline-danger"
+                  onClick={() => dispatch(memberStatus(mission.mission_id))}
+                  className="btn-max-heigth"
+                >
+                  Leave Mission
+                </Button>
               </li>
             ))}
           </ul>
