@@ -1,3 +1,8 @@
-body {
-  margin: 0;
+.pageIcon {
+  width: 6rem;
+}
+
+.navPadding {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
