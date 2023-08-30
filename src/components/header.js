@@ -14,15 +14,15 @@ const Header = () => (
         <img src={planet} alt="page icon" className="pageIcon" />
         <h1>Space Travelers&apos;s Hub</h1>
       </Container>
-      <Container bsPrefix="row">
+      <Container bsPrefix="row" className="container-gap">
         <Nav.Item>
-          <Nav.Link href="/home"><Link to="/">Rockets</Link></Nav.Link>
+          <Link to="/">Rockets</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1"><Link to="/Missions">Missions</Link></Nav.Link>
+          <Link to="/Missions">Missions</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2"><Link to="/MyProfile">My Profile</Link></Nav.Link>
+          <Link to="/MyProfile">My Profile</Link>
         </Nav.Item>
       </Container>
     </Navbar>
