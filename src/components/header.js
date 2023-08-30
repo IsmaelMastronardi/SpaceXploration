@@ -28,7 +28,7 @@ import planet from '../assets/icons/planet.png';
 // );
 const Header = () => (
   <>
-    <Navbar className="justify-content-between  align-items-center" sticky="top" bg="white">
+    <Navbar className="justify-content-between  align-items-center border-bottom navPadding" sticky="top" bg="white">
       <Container bsPrefix="row" className="align-items-center">
         <img src={planet} alt="page icon" className="pageIcon" />
         <h1>Space Travelers&apos;s Hub</h1>
@@ -40,11 +40,15 @@ const Header = () => (
         <Nav.Item>
           <Nav.Link eventKey="link-1"><Link to="/Missions">Missions</Link></Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-2"><Link to="/MyProfile">My Profile</Link></Nav.Link>
+        </Nav.Item>
       </Container>
     </Navbar>
     <Routes>
       <Route path="/" element={<Rockets />} />
       <Route path="/Missions" element={<Missions />} />
+      <Route path="/MyProfile" element={<Missions />} />
     </Routes>
   </>
 );
