@@ -21,6 +21,7 @@ const Header = () => (
         <Nav.Item>
           <Link to="/Missions">Missions</Link>
         </Nav.Item>
+        <div className="headerBar" />
         <Nav.Item>
           <Link to="/MyProfile">My Profile</Link>
         </Nav.Item>
