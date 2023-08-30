@@ -7,6 +7,12 @@
   padding-right: 3rem;
 }
 
+.headerBar {
+  width: 0.125rem;
+  height: 1.5rem;
+  border-left: solid 2px #bbbaba;
+}
+
 .container-gap {
   gap: 1.5rem;
 }
