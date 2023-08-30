@@ -153,7 +153,7 @@ If you like this project plese support it through these email:
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-  
+  The Logo was created by Freepik - Flaticon
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
