@@ -4,6 +4,7 @@ import {
 } from 'react-bootstrap';
 import Rockets from './Rockets/rockets';
 import Missions from './Missions/missions';
+import MyProfile from './MyProfile/MyProfile';
 import planet from '../assets/icons/planet.png';
 
 const Header = () => (
@@ -28,7 +29,7 @@ const Header = () => (
     <Routes>
       <Route path="/" element={<Rockets />} />
       <Route path="/Missions" element={<Missions />} />
-      <Route path="/MyProfile" element={<Missions />} />
+      <Route path="/MyProfile" element={<MyProfile />} />
     </Routes>
   </>
 );
