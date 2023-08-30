@@ -10,3 +10,7 @@
 .container-gap {
   gap: 1.5rem;
 }
+
+.noMissions {
+  font-size: 1.5rem;
+}

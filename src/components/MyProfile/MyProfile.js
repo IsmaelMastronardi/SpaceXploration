@@ -20,11 +20,15 @@ const MyProfile = () => {
       </ul>
       <h2>Reserved Missions :</h2>
       <ul>
-        {filterMission.map((mission) => (
-          <li key={mission.mission_id}>
-            <h3>{mission.mission_name}</h3>
-          </li>
-        ))}
+        { filterMission.length === 0 ? (<p className="noMissions">No Misions Joined</p>) : (
+          <ul>
+            {filterMission.map((mission) => (
+              <li key={mission.mission_id}>
+                <h3>{mission.mission_name}</h3>
+              </li>
+            ))}
+          </ul>
+        ) }
       </ul>
     </div>
   );
