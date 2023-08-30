@@ -6,3 +6,7 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+.container-gap {
+  gap: 1.5rem;
+}
