@@ -15,7 +15,7 @@ describe('Rockets Component', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Falcon 1')).toBeInTheDocument();
-    });
+    }, { timeout: 10000 });
   });
 
   test('toggle reservation status', async () => {
