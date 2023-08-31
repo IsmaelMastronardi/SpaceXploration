@@ -3,7 +3,6 @@ import logger from 'redux-logger';
 import rocketsReducer from './rockets/rocketsSlice';
 import missionsReducer from './Missions/missionsSlice';
 
-// Determina si la aplicación está en modo de prueba
 const isTestEnvironment = process.env.NODE_ENV === 'test';
 
 const store = configureStore({
