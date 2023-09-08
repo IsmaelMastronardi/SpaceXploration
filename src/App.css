@@ -1,0 +1,42 @@
+.pageIcon {
+  width: 6rem;
+}
+
+.navPadding {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.headerBar {
+  width: 0.125rem;
+  height: 1.5rem;
+  border-left: solid 2px #bbbaba;
+}
+
+.container-gap {
+  gap: 1.5rem;
+}
+
+.noMissions {
+  font-size: 1.5rem;
+}
+
+.myProfileListItem {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.myProfileMissionTitle {
+  width: 18rem;
+}
+
+.btn-max-heigth {
+  max-height: 40px;
+}
+
+.img-thumbnail {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}

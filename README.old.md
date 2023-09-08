@@ -22,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space Xploration] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
-**[Space Xploration]** is a SPA used to acces information about space x Rockets and Missions, fetched from the Spacex API
+**[Bookstore]** is a SPA used to keep track of book progress.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,10 +36,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Single Page Application build using React and Redux]**
-- **[Displays Space X Rockes and Missions]**
-- **[Allows user to join to Rockets and Missions]**
-- **[Displays to the user wich Rockets and Missions They have joined]**
+- **[Single Page Application build using React]**
+- **[Navbar using Routes]**
+- **[Displays different books]**
+- **[Add and remove books]**
+- **[Use Bookstore API to save and load the books]**
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,19 +120,13 @@ Example command:
 - Twitter: [@twitterhandle](https://twitter.com/IsmaMastronardi)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ismael-mastronardi-361873271/)
 
-👤 *Luis Emilio Rojas*
-
-- GitHub: [@lerfast](https://github.com/lerfast)
-- Twitter: [@](https://twitter.com/)
-- LinkedIn: [](https://www.linkedin.com/in/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Rocket link to info]**
+- [ ] **[API usage]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -138,7 +135,7 @@ Example command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/IsmaelMastronardi/spacex-group-project/issues).
+Feel free to check the [issues page](https://github.com/IsmaelMastronardi/bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,14 +143,14 @@ Feel free to check the [issues page](https://github.com/IsmaelMastronardi/spacex
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project plese support it through these email: 
+If you like this project plese support it through these emails: 
  -mastronardiismael@gmail.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-  The Logo was created by Freepik - Flaticon
+  I would like to thank Didy for helping me with some issues.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
